@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://warkoppancongyeye.id/sitemap.xml
+Sitemap: https://pancong-yeye.vercel.app/sitemap.xml

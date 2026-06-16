@@ -20,18 +20,19 @@
   <meta property="og:url" content="https://warkoppancongyeye.id/" />
   <meta property="og:locale" content="id_ID" />
 
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="stitch_assets/Pancong_Cheese_Pull_Apart.jpg" fetchpriority="high" />
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
-    media="print"
-    onload="this.media='all'"
   />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="style.css" />
   <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" />
     <link rel="stylesheet" href="style.css" />
@@ -154,7 +155,9 @@
           class="hero__bg-img"
           width="1920"
           height="1080"
+          loading="eager"
           fetchpriority="high"
+          decoding="async"
         />
         <div class="hero__overlay"></div>
       </div>
@@ -276,6 +279,7 @@
                   width="600"
                   height="400"
                   loading="lazy"
+                  decoding="async"
                 />
                 <span class="menu-card__zoom-hint" aria-hidden="true">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -318,6 +322,7 @@
                   width="600"
                   height="400"
                   loading="lazy"
+                  decoding="async"
                 />
                 <span class="menu-card__zoom-hint" aria-hidden="true">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -360,6 +365,7 @@
                   width="600"
                   height="400"
                   loading="lazy"
+                  decoding="async"
                 />
                 <span class="menu-card__zoom-hint" aria-hidden="true">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -472,8 +478,9 @@
               alt="Berbagai macam kue pancong Warkop Pancong Yeye disajikan di atas daun pisang"
               class="gallery__img"
               width="800"
-              height="600"
+              height="450"
               loading="lazy"
+              decoding="async"
             />
             <span class="gallery__zoom-hint" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -492,8 +499,9 @@
               alt="Pancong Matcha Almond Warkop Pancong Yeye dengan saus matcha dan taburan almond panggang"
               class="gallery__img"
               width="600"
-              height="500"
+              height="450"
               loading="lazy"
+              decoding="async"
             />
             <span class="gallery__zoom-hint" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -512,8 +520,9 @@
               alt="Pancong Keju Lumer Warkop Pancong Yeye – tangan menarik pancong dan keju meleleh"
               class="gallery__img"
               width="600"
-              height="500"
+              height="450"
               loading="lazy"
+              decoding="async"
             />
             <span class="gallery__zoom-hint" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -532,8 +541,9 @@
               alt="Pancong Cokelat Keju Warkop Pancong Yeye disajikan di atas piring kayu"
               class="gallery__img"
               width="600"
-              height="500"
+              height="450"
               loading="lazy"
+              decoding="async"
             />
             <span class="gallery__zoom-hint" aria-hidden="true">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6"/></svg>
@@ -690,6 +700,8 @@
           alt=""
           width="1200"
           height="800"
+          loading="lazy"
+          decoding="async"
         />
         <figcaption id="lightbox-caption" class="lightbox__caption"></figcaption>
       </figure>

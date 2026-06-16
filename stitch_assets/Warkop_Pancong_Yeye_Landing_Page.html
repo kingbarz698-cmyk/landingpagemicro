@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Warkop Pancong Yeye</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "sage-accent": "#7D8A6E",
+                      "on-secondary": "#ffffff",
+                      "primary-fixed": "#ffdcc5",
+                      "surface-container-lowest": "#ffffff",
+                      "surface-dim": "#e2d8d3",
+                      "surface-container-low": "#fcf1ec",
+                      "outline": "#83746b",
+                      "surface-tint": "#805533",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#301400",
+                      "glass-bg": "rgba(245, 240, 235, 0.7)",
+                      "on-surface": "#1f1b18",
+                      "secondary": "#605e5a",
+                      "on-error-container": "#93000a",
+                      "tertiary-fixed": "#baeaf9",
+                      "inverse-surface": "#352f2c",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#ebe0db",
+                      "primary": "#6f4627",
+                      "on-tertiary-fixed-variant": "#1a4d59",
+                      "surface-container-high": "#f1e6e1",
+                      "on-tertiary": "#ffffff",
+                      "tertiary-fixed-dim": "#9ecedd",
+                      "secondary-fixed": "#e6e2dd",
+                      "surface-variant": "#ebe0db",
+                      "secondary-fixed-dim": "#cac6c1",
+                      "primary-fixed-dim": "#f4bb92",
+                      "outline-variant": "#d5c3b8",
+                      "on-secondary-fixed": "#1d1b19",
+                      "on-secondary-container": "#666460",
+                      "on-secondary-fixed-variant": "#484643",
+                      "surface-container": "#f6ece7",
+                      "surface": "#fff8f5",
+                      "on-error": "#ffffff",
+                      "surface-bright": "#fff8f5",
+                      "text-secondary": "#5A5A5A",
+                      "on-background": "#1f1b18",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed": "#001f26",
+                      "text-main": "#2D2D2D",
+                      "secondary-container": "#e6e2dd",
+                      "on-surface-variant": "#51443c",
+                      "on-primary-container": "#ffe3d1",
+                      "primary-container": "#8b5e3c",
+                      "background": "#fff8f5",
+                      "on-primary-fixed-variant": "#653d1e",
+                      "inverse-on-surface": "#f9efe9",
+                      "tertiary": "#265763",
+                      "on-tertiary-container": "#c1f0ff",
+                      "inverse-primary": "#f4bb92",
+                      "tertiary-container": "#406f7c"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap-mobile": "64px",
+                      "gutter": "24px",
+                      "section-gap-desktop": "120px",
+                      "container-max": "1200px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "Be Vietnam Pro"
+                      ],
+                      "price-display": [
+                              "Be Vietnam Pro"
+                      ],
+                      "body-lg": [
+                              "Be Vietnam Pro"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-lg": [
+                              "Playfair Display"
+                      ],
+                      "body-md": [
+                              "Be Vietnam Pro"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "price-display": [
+                              "20px",
+                              {
+                                      "lineHeight": "1",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "28px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "56px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col antialiased">
+<!-- TopNavBar -->
+<header class="bg-glass-bg dark:bg-glass-bg backdrop-blur-xl fixed top-0 w-full z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">
+                Warkop Pancong Yeye
+            </div>
+<nav class="hidden md:flex gap-8">
+<a class="text-primary dark:text-primary-fixed font-bold border-b-2 border-primary font-label-md text-label-md pb-1" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#menu">Menu</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant/80 font-label-md text-label-md hover:text-primary transition-colors duration-300" href="#contact">Contact</a>
+</nav>
+<button class="hidden md:flex items-center gap-2 bg-primary-container text-on-primary-container px-6 py-3 rounded-full font-label-md text-label-md hover:scale-[1.02] transition-transform duration-300">
+<span class="material-symbols-outlined">chat</span>
+                Pesan via WhatsApp
+            </button>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-[88px]">
+<!-- Hero Section -->
+<section class="relative min-h-[819px] flex items-center justify-center overflow-hidden">
+<img alt="Hero Image" class="absolute inset-0 w-full h-full object-cover" data-alt="A breathtaking, high-resolution food photography shot of steaming, freshly baked Kue Pancong (Indonesian coconut cake) resting on a rustic wooden table. The scene is bathed in warm, natural morning light streaming through a window, highlighting the golden-brown crust and soft, lumer (melted) interior of the cake. The aesthetic is warm, nostalgic, and modern, utilizing a soft earth-tone color palette with deep browns, creamy whites, and subtle green hints from a nearby pandan leaf. Shot with a shallow depth of field to emphasize the texture of the warm pastry against a softly blurred, cozy cafe background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLJBUpi1E4XxBzCNGh-79JxuIhDynKATowF29f3BJJAn7dk10aEsyqloESgPC90bf43W-CZNejW08hWfbSvtqnCdUfWS-dDy-eydej16e_6Fu6THcwb1WBWNiIpx2gwYN9IAT9riEAcOzeaKP7QIbk0ng9nY4v_QR1c0rJwY4H394yJxUO5HkFuR7NrXJzrHqk7LQbyj3EST6M8OLPAKPVrRwReZD8RH4c0d8AnGiG2600jFfURBCHIQt9jx-31jlsQxzNp3uDsQE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent md:bg-gradient-to-r md:from-background/90 md:via-background/50 md:to-transparent"></div>
+<div class="relative z-10 w-full max-w-container-max mx-auto px-gutter py-section-gap-mobile md:py-section-gap-desktop text-center md:text-left flex flex-col items-center md:items-start gap-6">
+<div class="flex items-center gap-2 bg-surface-container/80 backdrop-blur-sm px-4 py-2 rounded-full border border-surface-dim">
+<span class="material-symbols-outlined fill text-yellow-500 text-sm">star</span>
+<span class="font-label-md text-label-md text-text-main">4.5/5 dari 1000+ Pelanggan</span>
+</div>
+<h1 class="font-display-lg text-display-lg md:text-[72px] text-primary max-w-3xl leading-tight">
+                    Nikmati Kelezatan Pancong Hangat Hanya di Yeye
+                </h1>
+<p class="font-body-lg text-body-lg text-text-main max-w-xl md:mb-4">
+                    Rasakan sensasi lumer di setiap gigitan. Dibuat dengan resep tradisional dan bahan-bahan premium untuk menemani momen santai Anda.
+                </p>
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-full font-label-md text-label-md hover:scale-[1.02] transition-all shadow-lg hover:shadow-xl flex items-center gap-3">
+                    Pesan Sekarang
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="py-section-gap-desktop px-gutter max-w-container-max mx-auto border-b border-surface-dim">
+<div class="text-center mb-16">
+<h2 class="font-label-md text-label-md text-text-secondary tracking-widest uppercase mb-4">Eksplorasi Rasa</h2>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Pilihan Favorit Kami</h3>
+</div>
+<div class="flex flex-nowrap overflow-x-auto md:flex-wrap justify-start md:justify-center gap-6 md:gap-12 pb-8 md:pb-0 hide-scrollbar snap-x">
+<!-- Category Item 1 -->
+<div class="flex flex-col items-center gap-4 group cursor-pointer snap-center shrink-0">
+<div class="w-28 h-28 md:w-36 md:h-36 rounded-full border border-surface-dim overflow-hidden p-1 bg-surface transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-lg">
+<img alt="Pancong Original" class="w-full h-full object-cover rounded-full" data-alt="A top-down, minimalist studio shot of a classic plain Indonesian Pancong cake centered inside a pristine white circular bowl. The lighting is soft and even, creating a bright, modern look with no harsh shadows. The color palette revolves around the golden-brown hues of the baked cake contrasting with the pure white background. The aesthetic is clean, premium, and appetizing, emphasizing the simple, traditional texture of the pastry." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmuFzMAYykW-LGFitqHMzrIMbPgw-IRtONmFRUx-WEffonLl9VfB-MeatIEY2S4v02Jbg3xLL62_5dZAza86IjaMpF638eThrY0UVLnQm4DXYpQSXaimJvXahZ1pgSk4eyr5TftD6XvschqQNRv_R-rpM7-bH51ie9P6oO9IN6GA-e1dCZH4NU17YL49mAT7sdGfDaA1wTk2gagmPhO5yYxGXOoRJnEXpBMP8YaFP3lxlSTa-TpfbmsggPGm3BgfSvahQ1NtNStvQ"/>
+</div>
+<span class="font-label-md text-label-md text-text-main group-hover:text-primary transition-colors">Pancong Original</span>
+</div>
+<!-- Category Item 2 -->
+<div class="flex flex-col items-center gap-4 group cursor-pointer snap-center shrink-0">
+<div class="w-28 h-28 md:w-36 md:h-36 rounded-full border border-surface-dim overflow-hidden p-1 bg-surface transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-lg">
+<img alt="Pancong Cokelat" class="w-full h-full object-cover rounded-full" data-alt="A macro, beautifully lit top-down photo of a Pancong cake generously smothered in rich, glossy melted chocolate, presented in a circular frame. The image has a warm, indulgent mood. The dark, velvety texture of the chocolate contrasts beautifully with the light, airy pastry edge visible underneath. The lighting highlights the reflective sheen of the melted chocolate, making it look incredibly rich and premium, fitting a modern cafe aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiJnPOwgzn0SMtGs8sNYb7SgFA4GQRvyB6AcQaVYWTosrJVCGSrBn5jt1fHHgEVsGMI_K-CGBgJS9-NeX8tXGbIYwZtyTJCvwDXCeb6hp2AEK-Ur0dpkyYaxN5wlA4Tj47oydtnh_ePH2SwVCdi9XFQvbSdTQyXuuCcyl-8l56LnAUxmbWU-rvkp24XzEQ-yxd86wTvZ8Rjqb9ZlVP4QdvVK09DZaL93DLzgoIUXj3DGl2KUtGT_RS3tOIGVTqZsQ8O--KJUY2-Kc"/>
+</div>
+<span class="font-label-md text-label-md text-text-main group-hover:text-primary transition-colors">Pancong Cokelat</span>
+</div>
+<!-- Category Item 3 -->
+<div class="flex flex-col items-center gap-4 group cursor-pointer snap-center shrink-0">
+<div class="w-28 h-28 md:w-36 md:h-36 rounded-full border border-surface-dim overflow-hidden p-1 bg-surface transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-lg">
+<img alt="Minuman Kopi" class="w-full h-full object-cover rounded-full" data-alt="An overhead view of a perfectly crafted latte with beautiful leaf-pattern latte art, served in a rustic ceramic cup within a circular crop. The coffee sits against a subtle, warm-toned textured background. The lighting is soft and inviting, emphasizing the contrast between the dark espresso crema and the bright white milk foam. The overall vibe is comforting, artisanal, and perfectly suited for a slow, nostalgic cafe experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjEm-aFVv0L5rvy0xre6UsyibrmDdOEfkjJGJLN39WolNKg928TbJ9RqXkXrkD8ebIq9QKmK0XQa05CnFLNlEAvoN8ay3KshzixTC1fZ0_TfCtnPv_AddrcbK3zT2nQny7ZzohsUWABu2bF8A_acjE4W3cXLGI-LWbICLifIf72bcc1hvyaAF8NqEDWtoqBG8uIfoXd02J4_4bPdDvx4jWvoaMbmvu4LKkqGfHj0vmfdcHnz26eilgn_8kchGRn1y9Y0nRmliag7M"/>
+</div>
+<span class="font-label-md text-label-md text-text-main group-hover:text-primary transition-colors">Minuman Kopi</span>
+</div>
+<!-- Category Item 4 -->
+<div class="flex flex-col items-center gap-4 group cursor-pointer snap-center shrink-0">
+<div class="w-28 h-28 md:w-36 md:h-36 rounded-full border border-surface-dim overflow-hidden p-1 bg-surface transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-lg">
+<img alt="Es Teh" class="w-full h-full object-cover rounded-full" data-alt="A refreshing top-down shot of a tall glass of iced tea with condensation on the glass, garnished with a slice of lemon and fresh mint leaves, captured inside a circular boundary. The amber color of the tea glows warmly against the light, conveying a sense of cool refreshment. The styling is clean and vibrant, utilizing natural sunlight to enhance the crispness of the ice and the vibrant green of the mint, fitting a modern, airy aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJa6el1OtPD0-MTD4_ujC4K-QAyurO3qgriLC2JeD0ySW33wI0cdTpCh8cloyGCcpK18R98RISEtdE9kdwi0HFqNTqDJ4eiUMJIGP-YGBT9_ZVv3YJg_IzNVdsFfnCb-42IWYZNP-9KPDKVBzun8C4nSKksHjjcP-ctkKIYRhOCL3c-4Xv0nf0go5uM9bz4xw6GuDWqPgS9q9G5WxYTSt9p_gnTw25E5t-2jdpytvmvFEVyo5M2xnI-fDh5QOqDX6f7GRLBQaVuPA"/>
+</div>
+<span class="font-label-md text-label-md text-text-main group-hover:text-primary transition-colors">Es Teh</span>
+</div>
+<!-- Category Item 5 -->
+<div class="flex flex-col items-center gap-4 group cursor-pointer snap-center shrink-0">
+<div class="w-28 h-28 md:w-36 md:h-36 rounded-full border border-surface-dim overflow-hidden p-1 bg-surface transition-transform duration-500 group-hover:-translate-y-2 group-hover:shadow-lg">
+<img alt="Snack" class="w-full h-full object-cover rounded-full" data-alt="A stylized, top-down photograph of traditional Indonesian fried snacks (gorengan) neatly arranged in a modern ceramic bowl, isolated within a circular frame. The golden, crispy textures of the snacks are highlighted by precise, warm lighting. The aesthetic bridges traditional street food with contemporary, premium presentation. The color palette features warm golds and soft background tones to maintain the cohesive 'warm nostalgic modern' feel of the brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFVe11yIdHzL-cfeE4ja4faaQSqnhMvARl35cEC-oygFxJQ7tdrghVwoG9pzWyoKsbWQeZY5lUmgtFTv2Qf5g9caml5HkotmGmPcUZfvAdbkpxQLry3zN0GKeCiiFFcMyg_w33EyZWBcZb7tcXeihdp7YYlycSP__vYQko8nS0lgqVdm6rzitpcAqO8gq3U-LXCq6Y1Sf966lbrXITELasOSyO0kXaquuuqSg5ToQKuDBfjlhwTAMrJX702Lq0E5kjqqYd-Km9SjY"/>
+</div>
+<span class="font-label-md text-label-md text-text-main group-hover:text-primary transition-colors">Snack</span>
+</div>
+</div>
+</section>
+<!-- Menu Section -->
+<section class="py-section-gap-desktop px-gutter max-w-container-max mx-auto" id="menu">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary">Menu Spesial Yeye</h2>
+<p class="font-body-md text-body-md text-text-secondary mt-2">Dibuat fresh setiap hari untuk menemani waktu santai Anda.</p>
+</div>
+<button class="text-primary font-label-md text-label-md border-b border-primary pb-1 hover:text-primary-container transition-colors">Lihat Semua Menu</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Menu Card 1 -->
+<div class="bg-surface rounded-2xl border border-surface-dim overflow-hidden group cursor-pointer hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 flex flex-col h-full">
+<div class="relative h-64 overflow-hidden">
+<img alt="Pancong Lumer Keju" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A close-up, mouth-watering shot of Pancong cake overflowing with melted, stringy cheese. The image captures the dynamic pull of the warm cheese as a piece is slightly lifted. The lighting is warm and directional, emphasizing the rich, gooey texture of the cheese and the slightly charred, crispy edges of the pastry. The setting feels like a cozy, high-end cafe, utilizing a shallow depth of field to keep the focus entirely on the delicious, indulgent texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTLjNxyURsW_9fbLoFDKxUkqWZoOQiQK3cQO0Th63GX7J5Ty2yOl2q-XYD2O3h33Z_nQ1HvfU4Vidw97qMV-nev1gGQrgoA1VPwU43OEA1dnUT4gP17HQiYqEmF_qQz03rEa0tJHNgHmkcxOgzdB5_H4KQIRty0whHY4LTbfiWYc5iEyMNwwOeqoLMJ-4jn6qXaspNdmomM25vLrBZ0A7Ijus6Z33Mwr0enMwdYmq5pPuBdrZzkJK_sgp4w1GlusRyOXeG2TSJgks"/>
+<div class="absolute top-4 left-4 bg-sage-accent text-white px-3 py-1 rounded-full font-label-md text-[12px] uppercase tracking-wider">Best Seller</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-[24px] text-primary mb-2">Pancong Lumer Keju</h3>
+<p class="font-body-md text-[14px] text-text-secondary line-clamp-2 mb-6">Paduan sempurna antara pancong tradisional yang lembut dengan limpahan keju premium yang lumer di mulut.</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-price-display text-price-display text-primary">Rp 18.000</span>
+<button class="w-10 h-10 rounded-full border border-primary flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Menu Card 2 -->
+<div class="bg-surface rounded-2xl border border-surface-dim overflow-hidden group cursor-pointer hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 flex flex-col h-full">
+<div class="relative h-64 overflow-hidden">
+<img alt="Pancong Choco Crunchy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="An artisanal presentation of Pancong cake topped with a generous layer of dark chocolate spread and sprinkled with crispy chocolate pearls. The photograph uses sophisticated, moody lighting that highlights the glossy chocolate and the textured crunches. Placed on a minimalist ceramic plate against a warm, muted background, the image exudes a premium, modern cafe aesthetic while showcasing an indulgent, rich dessert." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6GGF9ILNpVxK7xx4UJHkZYm5z-T2cmQJPlmXC3S03XgVhbQ_w3Kr-WJtISC0_c3u6wPzoZNhy8M-53mbKYfkIOvPbrc5G3uVIErZWxO9Gq4hd-mias514z4KLxx0i6ZnlFBh0w6PLHbbEkWVnCmgmfvYbEBMyZiI05ZugKBnV2P5CHeFcfnx0CQ05maL0o--gnNc4SSCaOx_3-6TqBAkHQQph_lFUEq989ypH60bTjOOP94CNi1fDqCnVSDwbrW3jbRSTv4GyzaY"/>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-[24px] text-primary mb-2">Pancong Choco Crunchy</h3>
+<p class="font-body-md text-[14px] text-text-secondary line-clamp-2 mb-6">Sensasi renyah dari choco crunch berpadu dengan selai cokelat pekat dan pancong yang hangat.</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-price-display text-price-display text-primary">Rp 20.000</span>
+<button class="w-10 h-10 rounded-full border border-primary flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Menu Card 3 -->
+<div class="bg-surface rounded-2xl border border-surface-dim overflow-hidden group cursor-pointer hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] transition-all duration-300 flex flex-col h-full">
+<div class="relative h-64 overflow-hidden">
+<img alt="Kopi Susu Gula Aren" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A beautiful, high-contrast shot of iced Kopi Susu Gula Aren (palm sugar milk coffee) in a clear, modern glass. The image captures the mesmerizing gradient of dark espresso blending into creamy milk, with thick, dark palm sugar syrup resting at the bottom. Condensation pearls on the glass add freshness. The lighting is soft and ambient, creating a warm, nostalgic mood typical of a premium, unhurried coffee shop experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLkCUrOqtihWg3O-6HP5-hgPHA7nA4_e147xjsM_DpCFquZVAQrTYP8ybKjEA2YOTxLYvzuSlLAAbj3opCItMCnB85W7jNdrJjVDH5itR3jn1AntGOmle7JX56CbRslrN2GLHN4y3Pwh5UGkzISKG5xTZ3mOFTF930cIjsDj_Pk_BRPciHt8eQSGGFcIQR8HJYwoH7UN93bJ5Gksv4GbI8Uj_XtWwO2qCvlNqOzgn7u-t2Kfu8GRi6ETuUt6IoDQw-bNlu-Uvr3go"/>
+<div class="absolute top-4 left-4 bg-surface-tint text-white px-3 py-1 rounded-full font-label-md text-[12px] uppercase tracking-wider">Rekomendasi</div>
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<h3 class="font-headline-md text-[24px] text-primary mb-2">Kopi Susu Gula Aren</h3>
+<p class="font-body-md text-[14px] text-text-secondary line-clamp-2 mb-6">Racikan kopi nusantara dengan manisnya gula aren murni. Teman sempurna untuk menikmati pancong.</p>
+<div class="mt-auto flex justify-between items-center">
+<span class="font-price-display text-price-display text-primary">Rp 22.000</span>
+<button class="w-10 h-10 rounded-full border border-primary flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-sm">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Location Section -->
+<section class="py-section-gap-desktop bg-surface-container-low border-y border-surface-dim" id="about">
+<div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="flex flex-col gap-8 order-2 lg:order-1">
+<div>
+<h2 class="font-label-md text-label-md text-text-secondary tracking-widest uppercase mb-4">Kunjungi Kami</h2>
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">Tempat Nyaman,<br/>Rasa Tak Terlupakan.</h3>
+<p class="font-body-lg text-body-lg text-text-main">
+                            Mampir ke Warkop Pancong Yeye untuk merasakan langsung kehangatan dari oven kami. Tempat yang pas untuk nongkrong santai bersama teman atau keluarga.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 border border-surface-dim">
+<span class="material-symbols-outlined text-primary">location_on</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Alamat</h4>
+<p class="font-body-md text-[14px] text-text-secondary">Jl. Kenangan Manis No. 45<br/>Jakarta Selatan, 12345</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 border border-surface-dim">
+<span class="material-symbols-outlined text-primary">schedule</span>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-primary mb-1">Jam Buka</h4>
+<p class="font-body-md text-[14px] text-text-secondary">Senin - Minggu<br/>15:00 - 00:00 WIB</p>
+</div>
+</div>
+</div>
+<button class="self-start px-8 py-3 rounded-full border border-primary text-primary font-label-md text-label-md hover:bg-primary hover:text-white transition-colors duration-300">
+                        Buka di Google Maps
+                    </button>
+</div>
+<div class="order-1 lg:order-2">
+<div class="rounded-2xl overflow-hidden border border-surface-dim h-[400px] lg:h-[500px] w-full bg-surface-container-highest relative">
+<!-- Simulated Map Image -->
+<img alt="Map Location" class="w-full h-full object-cover opacity-80" data-alt="A highly stylized, minimalist aerial map view showing a stylized urban street grid. The color palette is muted and warm, utilizing soft beiges, subtle earthy greens, and faded browns to align perfectly with the 'warm nostalgic modern' UI aesthetic. The map features a subtle, glowing marker pin in the center indicating a premium location. The overall aesthetic is clean, abstract, and deeply integrated into a high-end digital design system." data-location="Jakarta" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBW3mpno_84zCK4tcquxvDGXdGfR3b-hA3HrHe0QfYywsvHviLpWa8c5ffAQiE5zGqLZG2Umk_8gdM_w9QOT1RztoT1jDE5pUvauS5MWFQGjBQE9B6-KuGZ0_5IaYwIPcjO8l6J8lkYuxBR7HBdfT4CJa6OR7yOb0aq-P-iqrMgpJ3EzPa6DSWMNxCaRsIdhUKch8cHf_J6XS5ghYM2PvMC2daSgAxsfu3cW8pL77tH9RZ-rERtojjk-o9E0Ui-YmPAra6ZsRN5pGY"/>
+<!-- Map Marker Overlay -->
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-white p-3 rounded-full shadow-lg mb-2">
+<span class="material-symbols-outlined fill">storefront</span>
+</div>
+<div class="bg-surface px-4 py-2 rounded-lg shadow-md border border-surface-dim font-label-md text-sm text-primary font-bold">
+                                Pancong Yeye
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container-highest border-t border-outline-variant full-width py-section-gap-mobile md:py-16">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter gap-8 max-w-container-max mx-auto">
+<div class="font-headline-md text-headline-md text-primary font-bold">
+                Warkop Pancong Yeye
+            </div>
+<div class="flex flex-wrap justify-center gap-6 md:gap-8">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all hover:scale-105" href="#">Instagram</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all hover:scale-105" href="#">TikTok</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all hover:scale-105" href="#">WhatsApp</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-primary transition-all hover:scale-105" href="#">Maps</a>
+</div>
+<div class="font-body-md text-body-md text-on-surface-variant text-center md:text-right">
+                © 2024 Warkop Pancong Yeye. Tradisi dalam Setiap Gigitan.
+            </div>
+</div>
+</footer>
+</body></html>

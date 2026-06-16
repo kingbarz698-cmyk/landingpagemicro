@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Warkop Pancong Yeye</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Be+Vietnam+Pro:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#6f4627",
+                        "on-tertiary-fixed": "#001f26",
+                        "on-primary-fixed-variant": "#653d1e",
+                        "outline": "#83746b",
+                        "secondary-fixed": "#e6e2dd",
+                        "on-secondary-container": "#666460",
+                        "on-primary-container": "#ffe3d1",
+                        "inverse-on-surface": "#f9efe9",
+                        "background": "#fff8f5",
+                        "error": "#ba1a1a",
+                        "on-background": "#1f1b18",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#1d1b19",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#e2d8d3",
+                        "on-surface": "#1f1b18",
+                        "inverse-primary": "#f4bb92",
+                        "tertiary-fixed-dim": "#9ecedd",
+                        "secondary-fixed-dim": "#cac6c1",
+                        "primary-fixed": "#ffdcc5",
+                        "secondary-container": "#e6e2dd",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#d5c3b8",
+                        "text-secondary": "#5A5A5A",
+                        "on-tertiary-fixed-variant": "#1a4d59",
+                        "tertiary": "#265763",
+                        "inverse-surface": "#352f2c",
+                        "primary-container": "#8b5e3c",
+                        "surface-container-highest": "#ebe0db",
+                        "surface-container-high": "#f1e6e1",
+                        "secondary": "#605e5a",
+                        "on-secondary-fixed-variant": "#484643",
+                        "surface-variant": "#ebe0db",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed": "#301400",
+                        "surface-tint": "#805533",
+                        "text-main": "#2D2D2D",
+                        "surface": "#fff8f5",
+                        "sage-accent": "#7D8A6E",
+                        "glass-bg": "rgba(245, 240, 235, 0.7)",
+                        "tertiary-fixed": "#baeaf9",
+                        "on-error": "#ffffff",
+                        "surface-container": "#f6ece7",
+                        "on-surface-variant": "#51443c",
+                        "primary-fixed-dim": "#f4bb92",
+                        "on-tertiary-container": "#c1f0ff",
+                        "on-secondary": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#406f7c",
+                        "surface-bright": "#fff8f5",
+                        "surface-container-low": "#fcf1ec"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "base": "8px",
+                        "section-gap-desktop": "120px",
+                        "section-gap-mobile": "64px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "body-lg": ["Be Vietnam Pro"],
+                        "price-display": ["Be Vietnam Pro"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["56px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.2", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "price-display": ["20px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "headline-md": ["28px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "headline-lg": ["40px", { "lineHeight": "1.2", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-panel {
+            background: rgba(245, 240, 235, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(213, 195, 184, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased md:hidden pb-24">
+<!-- TopAppBar -->
+<header class="glass-panel fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-4 transition-transform active:scale-95">
+<button class="text-primary hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="font-headline-md text-headline-md-mobile text-primary">Warkop Pancong Yeye</div>
+<button class="text-primary hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</header>
+<!-- Hero Section -->
+<section class="mt-20 px-gutter pt-8 pb-section-gap-mobile flex flex-col items-center text-center">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-4">Nikmati Kelezatan Pancong Hangat Hanya di Yeye</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 max-w-[300px]">Dibuat dengan resep tradisional dan bahan pilihan, menghadirkan rasa nostalgia di setiap gigitan.</p>
+<button class="bg-primary-container text-white rounded-full px-8 py-3 font-label-md text-label-md hover:scale-[1.02] transition-transform duration-200">Pesan Sekarang</button>
+<div class="w-full mt-12 rounded-[16px] overflow-hidden relative" style="padding-top: 100%;">
+<img alt="Hero Image" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuZAM03zCKhcsZMKtp1l4o337tQpP1ILOO1OuB2AR3ppCmY7RDkIVM3m38dS2HZrkVUWknUAC5ru3P1Dl7nmvirxwJgdhsODV3LQuyuXTzx5t3OAE3Z-syPBGMxwT1pRIDIgr5HuXwZy3YI-0m8lV2gu21neeSVk-ABQLJ-z4UWJJh2d8pmE5tro7DYM7-yG7rkyl0znG2MX2QXHLYNG3-r_NE5oVrVMZssDOzy_jv8Hf5tZSCnZTNx0ws"/>
+</div>
+</section>
+<!-- Category Icons (Horizontal Scroll) -->
+<section class="px-gutter mb-section-gap-mobile">
+<div class="flex overflow-x-auto no-scrollbar gap-6 pb-4">
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center mb-3 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary" data-icon="bakery_dining" style="font-size: 32px;">bakery_dining</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Original</span>
+</div>
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center mb-3 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary" data-icon="cake" style="font-size: 32px;">cake</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Cokelat</span>
+</div>
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center mb-3 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary" data-icon="local_cafe" style="font-size: 32px;">local_cafe</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Kopi</span>
+</div>
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center mb-3 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary" data-icon="emoji_food_beverage" style="font-size: 32px;">emoji_food_beverage</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Es Teh</span>
+</div>
+<div class="flex flex-col items-center min-w-[80px]">
+<div class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center mb-3 bg-surface-container-lowest">
+<span class="material-symbols-outlined text-primary" data-icon="tapas" style="font-size: 32px;">tapas</span>
+</div>
+<span class="font-label-md text-label-md text-center text-on-surface-variant">Snack</span>
+</div>
+</div>
+</section>
+<!-- Menu Grid -->
+<section class="px-gutter mb-section-gap-mobile">
+<h2 class="font-headline-md text-headline-md-mobile text-primary mb-6">Menu Favorit</h2>
+<div class="flex flex-col gap-6">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-[16px] border border-surface-dim overflow-hidden flex flex-col group transition-shadow hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="w-full h-48 overflow-hidden relative">
+<img alt="Pancong Lumer Keju" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLu_FY713-IGVKB0GcOiB2IFYy_l0a9FuD0XletTRNAPWizy3fiJWh-KghW81Qbt_z9OwCw8UDXaeWAdQ3MlSH-mXzFXh6FC4MR0s1NjJpILHz3ucaSn0UOwed52i4EPdbtFgLR9UxrYctVLiquXtKY6Wr-I1s07Nhdca4z9iM4xMq975Dn6u46KQm-y9Sc7VRb_u_N7P-rY8FUSWm4NYt2LuW-4ruRuCk9Qc_pKTJ2RdwUt51SV2ptCqHE"/>
+<div class="absolute top-3 right-3 bg-sage-accent text-white px-3 py-1 rounded-full font-label-md text-[12px]">Best Seller</div>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-on-background">Pancong Lumer Keju</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Pancong setengah matang dengan topping keju lumer yang melimpah.</p>
+<div class="flex justify-between items-center mt-2">
+<span class="font-price-display text-price-display text-primary">Rp 18.000</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-[16px] border border-surface-dim overflow-hidden flex flex-col group transition-shadow hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="w-full h-48 overflow-hidden relative">
+<img alt="Pancong Matcha Almond" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLuWvP4dvk5E8aYr1Qrm6JyJ5TO3sIvoM_Xx6Y2G7BfVaq0FQGMzCPYxvn-pWUkTHy0uGLqfGl54CrtP5BtzJKlm_KGAmZ7eRIY4HKN2qmj8iJed-GSkmIW51V5fx9pU9Oruq6zaln2CKSCtJ20qigzBSSEBHZ_yV07cpss8lLCAG2TLHTbsCXQNmWKxB48UVcSLlfW392X5jprVgr-o09qdfJ7Fe8zZi3L_-XlPsljJM_hVCpPJ948CKWo"/>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-on-background">Pancong Matcha Almond</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Pancong lembut disiram saus matcha autentik dan taburan almond panggang.</p>
+<div class="flex justify-between items-center mt-2">
+<span class="font-price-display text-price-display text-primary">Rp 20.000</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-[16px] border border-surface-dim overflow-hidden flex flex-col group transition-shadow hover:shadow-[0_4px_24px_rgba(0,0,0,0.08)]">
+<div class="w-full h-48 overflow-hidden relative">
+<img alt="Pancong Campur Sari" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida/AP1WRLvG3SjvM1Hl2GudTOKUcWNAcLSsQIt-kHYSTZvrd1JNt2Z50n7qzwNE9jvNIDK_O4CR8_iOrZmOBr1rXyJumWqO_3aTmICOM8IphrnS0wtUUhJThGVgXbMYKa1lYbNOa8GQNngKAVfCvh6MDDA03n_TwfPZZ_zs4vNhetcCjWro7XV6ONxMbZ4LvMoyzsDBm0K0XOlt9PArRUtHbC7KtsZXs4MKVCK4fF9fX9qGhbMjLTl-weTWrAnQCg"/>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h3 class="font-headline-md text-[20px] text-on-background">Pancong Campur Sari</h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Kombinasi berbagai topping klasik dalam satu porsi penyajian tradisional.</p>
+<div class="flex justify-between items-center mt-2">
+<span class="font-price-display text-price-display text-primary">Rp 22.000</span>
+<button class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined" data-icon="add">add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery -->
+<section class="px-gutter mb-section-gap-mobile">
+<h2 class="font-headline-md text-headline-md-mobile text-primary mb-6">Galeri Momen</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="col-span-2 rounded-[16px] overflow-hidden relative pt-[60%]">
+<img alt="Gallery Main" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuZAM03zCKhcsZMKtp1l4o337tQpP1ILOO1OuB2AR3ppCmY7RDkIVM3m38dS2HZrkVUWknUAC5ru3P1Dl7nmvirxwJgdhsODV3LQuyuXTzx5t3OAE3Z-syPBGMxwT1pRIDIgr5HuXwZy3YI-0m8lV2gu21neeSVk-ABQLJ-z4UWJJh2d8pmE5tro7DYM7-yG7rkyl0znG2MX2QXHLYNG3-r_NE5oVrVMZssDOzy_jv8Hf5tZSCnZTNx0ws"/>
+</div>
+<div class="rounded-[16px] overflow-hidden relative pt-[100%]">
+<img alt="Gallery 1" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLuWvP4dvk5E8aYr1Qrm6JyJ5TO3sIvoM_Xx6Y2G7BfVaq0FQGMzCPYxvn-pWUkTHy0uGLqfGl54CrtP5BtzJKlm_KGAmZ7eRIY4HKN2qmj8iJed-GSkmIW51V5fx9pU9Oruq6zaln2CKSCtJ20qigzBSSEBHZ_yV07cpss8lLCAG2TLHTbsCXQNmWKxB48UVcSLlfW392X5jprVgr-o09qdfJ7Fe8zZi3L_-XlPsljJM_hVCpPJ948CKWo"/>
+</div>
+<div class="rounded-[16px] overflow-hidden relative pt-[100%]">
+<img alt="Gallery 2" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLu_FY713-IGVKB0GcOiB2IFYy_l0a9FuD0XletTRNAPWizy3fiJWh-KghW81Qbt_z9OwCw8UDXaeWAdQ3MlSH-mXzFXh6FC4MR0s1NjJpILHz3ucaSn0UOwed52i4EPdbtFgLR9UxrYctVLiquXtKY6Wr-I1s07Nhdca4z9iM4xMq975Dn6u46KQm-y9Sc7VRb_u_N7P-rY8FUSWm4NYt2LuW-4ruRuCk9Qc_pKTJ2RdwUt51SV2ptCqHE"/>
+</div>
+</div>
+</section>
+<!-- Location/Contact -->
+<section class="px-gutter mb-section-gap-mobile flex flex-col items-center text-center">
+<h2 class="font-headline-md text-headline-md-mobile text-primary mb-4">Tempat Nyaman, Rasa Tak Terlupakan.</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Jl. Kenangan Indah No. 45, Jakarta Selatan<br/>Buka Setiap Hari: 15.00 - 23.00 WIB</p>
+<div class="w-full h-48 bg-surface-container rounded-[16px] mb-6 overflow-hidden flex items-center justify-center border border-outline-variant relative" data-location="Jakarta" style="">
+<!-- Placeholder for Map Image -->
+<div class="absolute inset-0 opacity-50 bg-[url('https://maps.googleapis.com/maps/api/staticmap?center=Jakarta&amp;zoom=14&amp;size=400x400&amp;maptype=roadmap&amp;sensor=false')] bg-cover bg-center"></div>
+<span class="material-symbols-outlined text-primary text-4xl relative z-10" data-icon="location_on">location_on</span>
+</div>
+<button class="border border-primary text-primary bg-transparent rounded-full px-6 py-2 font-label-md text-label-md hover:bg-primary/5 transition-colors flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]" data-icon="map">map</span> Buka di Google Maps
+        </button>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest px-gutter py-8 flex flex-col items-center text-center gap-4">
+<div class="font-headline-md text-headline-md-mobile text-primary">Yeye</div>
+<div class="flex gap-4 mb-2">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="camera_alt">camera_alt</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]" data-icon="thumb_up">thumb_up</span>
+</div>
+</div>
+<p class="font-body-md text-[12px] text-on-surface-variant">© 2024 Warkop Pancong Yeye. All rights reserved.</p>
+</footer>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 py-2 pb-safe bg-surface border-t border-outline-variant/20 shadow-sm scale-up transition-all duration-200">
+<div class="flex flex-col items-center justify-center text-primary bg-secondary-container/50 rounded-xl px-3 py-1 cursor-pointer hover:bg-secondary-fixed/50">
+<span class="material-symbols-outlined font-label-md text-label-md" data-icon="home">home</span>
+<span class="font-label-md text-[10px]">Home</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-container px-3 py-1 cursor-pointer hover:bg-secondary-fixed/50">
+<span class="material-symbols-outlined font-label-md text-label-md" data-icon="restaurant_menu">restaurant_menu</span>
+<span class="font-label-md text-[10px]">Menu</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-container px-3 py-1 cursor-pointer hover:bg-secondary-fixed/50">
+<span class="material-symbols-outlined font-label-md text-label-md" data-icon="photo_library">photo_library</span>
+<span class="font-label-md text-[10px]">Gallery</span>
+</div>
+<div class="flex flex-col items-center justify-center text-on-secondary-container px-3 py-1 cursor-pointer hover:bg-secondary-fixed/50">
+<span class="material-symbols-outlined font-label-md text-label-md" data-icon="location_on">location_on</span>
+<span class="font-label-md text-[10px]">Map</span>
+</div>
+</nav>
+</body></html>
